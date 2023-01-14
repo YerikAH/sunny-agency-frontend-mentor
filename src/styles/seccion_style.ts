@@ -37,10 +37,15 @@ export const SectionStyle = styled.section`
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   margin-top: 2.1rem;
+  height: 25.8rem;
   @media (min-width: 720px) {
     margin-top: 5.1rem;
+    height: 32.4rem;
+  }
+  @media (min-width: 1000px) {
+    height: 37.4rem;
   }
 `;
 export const SectionDiv = styled.div`
