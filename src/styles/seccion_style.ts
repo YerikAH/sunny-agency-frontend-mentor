@@ -6,6 +6,7 @@ export const BackgroundImage = styled.div`
   width: 100%;
   position: absolute;
   top: 0;
+  max-width: 1440px;
   background: url(${imgHeaderMobile}) center/cover no-repeat;
   @media (min-width: 720px) {
     background: url(${imgHeaderDesktop}) center/cover no-repeat;
@@ -15,6 +16,21 @@ export const BackgroundImage = styled.div`
     background: url(${imgHeaderDesktop}) center/cover no-repeat;
     height: 50rem;
   }
+  z-index: 50;
+`;
+export const BackgroundColor = styled.div`
+  height: 33.75rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-color: var(--header-image-color);
+  @media (min-width: 720px) {
+    height: 45rem;
+  }
+  @media (min-width: 1000px) {
+    height: 50rem;
+  }
+  z-index: 10;
 `;
 
 export const Sectionstyle = styled.section`
@@ -22,6 +38,10 @@ export const Sectionstyle = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2.1rem;
+  @media (min-width: 720px) {
+    margin-top: 5.1rem;
+  }
 `;
 export const SectionDiv = styled.div`
   max-width: 1440px;
@@ -39,6 +59,19 @@ export const DivTitle = styled.h1`
   text-align: center;
   text-transform: uppercase;
   color: var(--white);
-  letter-spacing: 0.390625rem;
+  letter-spacing: 6.2px;
+  @media (min-width: 375px) {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  @media (min-width: 1000px) {
+    font-size: 3.5rem;
+    letter-spacing: 8.8px;
+  }
 `;
-export const DivImage = styled.img``;
+export const DivImage = styled.img`
+  margin-top: 2.3rem;
+  @media (min-width: 720px) {
+    margin-top: 6.7rem;
+  }
+`;

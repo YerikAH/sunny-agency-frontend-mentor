@@ -41,7 +41,7 @@ export default function Navegator() {
               <LiA>Projects</LiA>
             </UlLi>
             <UlLi>
-              <LiA>Contact</LiA>
+              <LiA className="special">Contact</LiA>
             </UlLi>
           </NavUl>
           <DivHam>

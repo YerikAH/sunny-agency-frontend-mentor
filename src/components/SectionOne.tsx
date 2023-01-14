@@ -8,6 +8,7 @@ import {
   DivTitle,
   SectionDiv,
   Sectionstyle,
+  BackgroundColor,
 } from "../styles/seccion_style";
 
 export default function SectionOne() {
@@ -15,6 +16,7 @@ export default function SectionOne() {
     <>
       <Sectionstyle>
         <BackgroundImage />
+        <BackgroundColor />
         <SectionDiv>
           <DivTitle>We are creatives</DivTitle>
           <DivImage src={arrowDown} />

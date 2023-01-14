@@ -15,7 +15,15 @@
   --white: hsl(0, 0%, 100%);
   --font-fraunces: "Fraunces", serif;
   --font-barlow: "Barlow", sans-serif;
+  --header-image-color: #3dbeff;
 }
+/*
+desktop = 1000px - 1440px - 1990px
+
+tablet = 720px
+
+phone = 375px
+*/
 
 *,
 *::after,
