@@ -13,38 +13,43 @@ import {
   LogoImg,
   LiA,
   NavImage,
+  DivHam,
+  DivContent,
+  UlLiLogo,
 } from "../styles/navegator_style";
 
 export default function Navegator() {
   return (
     <Header>
       <Nav>
-        <NavUl>
-          <UlLi>
-            <LiALogo href="#">
+        <UlLiLogo>
+          <LiALogo href="#">
+            <UlLi>
               <LogoImg src={logo} />
-            </LiALogo>
-          </UlLi>
-          <UlLi>
-            <LiALogo>
+            </UlLi>
+          </LiALogo>
+        </UlLiLogo>
+        <DivContent>
+          <NavUl>
+            <UlLi>
               <LiA>About</LiA>
-            </LiALogo>
-            <LiALogo>
+            </UlLi>
+            <UlLi>
               <LiA>Services</LiA>
-            </LiALogo>
-            <LiALogo>
+            </UlLi>
+            <UlLi>
               <LiA>Projects</LiA>
-            </LiALogo>
-            <LiALogo>
-              <LiA>CONTACT</LiA>
-            </LiALogo>
-            <LiALogo>
-              <LiA>
-                <NavImage src={ham} />
-              </LiA>
-            </LiALogo>
-          </UlLi>
-        </NavUl>
+            </UlLi>
+            <UlLi>
+              <LiA>Contact</LiA>
+            </UlLi>
+          </NavUl>
+          <DivHam>
+            <LiA>
+              <NavImage src={ham} />
+            </LiA>
+          </DivHam>
+        </DivContent>
       </Nav>
     </Header>
   );

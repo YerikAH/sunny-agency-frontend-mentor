@@ -1,8 +1,13 @@
+import Main from "./components/Main";
+import Navegator from "./components/Navegator";
+
 function App() {
   return (
-    <div>
-    </div>
-  )
+    <>
+      <Navegator />
+      <Main />
+    </>
+  );
 }
 
-export default App
+export default App;
