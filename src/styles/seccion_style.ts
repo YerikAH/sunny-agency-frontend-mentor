@@ -33,7 +33,7 @@ export const BackgroundColor = styled.div`
   z-index: 10;
 `;
 
-export const Sectionstyle = styled.section`
+export const SectionStyle = styled.section`
   width: 100%;
   display: flex;
   justify-content: center;
