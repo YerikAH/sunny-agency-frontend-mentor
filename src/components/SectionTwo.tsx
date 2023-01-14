@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 /* images */
 import eggYellowMobile from "../images/mobile/image-transform.jpg";
@@ -18,11 +18,15 @@ import {
 } from "../styles/seccion_two_style";
 
 export default function SectionTwo() {
+  useEffect(() => {
+    console.log(screen.width);
+  }, [screen.width]);
+
   return (
     <SectionStyle>
       <DivGrid>
-        <GridImage src={eggYellowMobile} />
-        <GridInfo>
+        <GridImage src={eggYellowMobile} className="two" />
+        <GridInfo className="one">
           <InfoTitle>Transform your brand</InfoTitle>
           <InfoText>
             We are a full-service creative agency specializing in helping brands
@@ -33,8 +37,8 @@ export default function SectionTwo() {
         </GridInfo>
       </DivGrid>
       <DivGrid>
-        <GridImage src={eggYellowMobile} />
-        <GridInfo>
+        <GridImage src={cupPinkMobile} className="one" />
+        <GridInfo className="two">
           <InfoTitle>Transform your brand</InfoTitle>
           <InfoText>
             We are a full-service creative agency specializing in helping brands
