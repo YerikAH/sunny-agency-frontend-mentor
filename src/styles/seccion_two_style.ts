@@ -36,18 +36,33 @@ export const GridInfo = styled.div`
 
   @media (min-width: 720px) {
     grid-area: ${(props) => props.className && props.className};
+    align-items: start;
+  }
+  @media (min-width: 1000px) {
+    padding: 0 7rem;
+  }
+  @media (min-width: 1200px) {
+    padding: 0 9rem;
   }
 `;
 export const InfoTitle = styled.h2`
   font: normal normal 900 2rem/2.5rem var(--font-fraunces);
   color: var(--very-dark-desaturated-blue);
   text-align: center;
+  @media (min-width: 720px) {
+    text-align: left;
+    font-size: 2.5rem;
+  }
 `;
 export const InfoText = styled.p`
   font: normal normal 500 1rem/1.8rem var(--font-barlow);
   color: var(--dark-grayish-blue);
   text-align: center;
   margin: 1.5rem 0;
+  @media (min-width: 720px) {
+    text-align: left;
+    font-size: 1.125rem;
+  }
 `;
 export const InfoLink = styled.a`
   font: normal normal 900 0.9rem/1rem var(--font-fraunces);
@@ -63,7 +78,17 @@ export const InfoLink = styled.a`
     background-color: ${(props) =>
       props.className && `var(--${props.className})`};
     left: -10%;
-    bottom: 0;
+    bottom: -2px;
     z-index: -1;
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+
+  @media (min-width: 720px) {
+    font-size: 1rem;
+  }
+
+  &:hover::before {
+    opacity: 1;
   }
 `;

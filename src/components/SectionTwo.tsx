@@ -7,15 +7,7 @@ import eggYellowDesktop from "../images/desktop/image-transform.jpg";
 import cupPinkDesktop from "../images/desktop/image-stand-out.jpg";
 
 /* styles */
-import {
-  DivGrid,
-  GridImage,
-  GridInfo,
-  InfoLink,
-  InfoText,
-  InfoTitle,
-  SectionStyle,
-} from "../styles/seccion_two_style";
+import { SectionStyle } from "../styles/seccion_two_style";
 import GridInfoComponent from "./GridInfoComponent";
 import {
   ST_DESCRIPTION_ONE,
