@@ -16,23 +16,10 @@ import {
 /* styles */
 import { SectionStyle } from "../styles/seccion_two_style";
 import GridInfoComponent from "./GridInfoComponent";
+import useWidth from "../hook/useWidth";
 
 export default function SectionTwo() {
-  const [windowWidth, setWindowWidth] = useState(0);
-  const [renderImages, setRenderImages] = useState(false);
-
-  useLayoutEffect(() => {
-    function updateWidth() {
-      setWindowWidth(window.innerWidth);
-    }
-    window.addEventListener("resize", updateWidth);
-    updateWidth();
-    return () => window.removeEventListener("resize", updateWidth);
-  }, []);
-
-  useEffect(() => {
-    windowWidth > 720 ? setRenderImages(true) : setRenderImages(false);
-  }, [windowWidth]);
+  const { windowWidth, renderImages } = useWidth();
 
   return (
     <SectionStyle>
