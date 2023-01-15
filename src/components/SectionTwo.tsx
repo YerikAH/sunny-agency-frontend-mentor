@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useState } from "react";
+import React from "react";
 
 /* images */
 import eggYellowMobile from "../images/mobile/image-transform.jpg";
@@ -16,6 +16,8 @@ import {
 /* styles */
 import { SectionStyle } from "../styles/seccion_two_style";
 import GridInfoComponent from "./GridInfoComponent";
+
+/* hooks */
 import useWidth from "../hook/useWidth";
 
 export default function SectionTwo() {

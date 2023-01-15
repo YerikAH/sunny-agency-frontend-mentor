@@ -16,12 +16,22 @@ export const DivGrid = styled.div`
     grid-template-columns: 50% 50%;
   }
 `;
-export const GridBackground = styled.div``;
+export const GridBackground = styled.div`
+  max-height: 35.313rem;
+  height: 100%;
+  width: 100%;
+  position: relative;
+`;
 export const BackgroundImage = styled.img`
   width: 100%;
+  object-fit: cover;
   height: 100%;
 `;
-export const BackgroundText = styled.div``;
+export const BackgroundText = styled.div`
+  position: absolute;
+  bottom: 0;
+  padding: 4rem;
+`;
 export const TextTitle = styled.h3`
   font: normal normal 900 1.75rem/1.5rem var(--font-fraunces);
 `;
