@@ -1,4 +1,6 @@
 import React from "react";
+/* text */
+import { SO_TITLE } from "../constant/constant";
 /* images */
 import arrowDown from "../images/icon-arrow-down.svg";
 /* styles */
@@ -18,7 +20,7 @@ export default function SectionOne() {
         <BackgroundImage />
         <BackgroundColor />
         <SectionDiv>
-          <DivTitle>We are creatives</DivTitle>
+          <DivTitle>{SO_TITLE}</DivTitle>
           <DivImage src={arrowDown} />
         </SectionDiv>
       </SectionStyle>

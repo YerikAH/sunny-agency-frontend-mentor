@@ -5,16 +5,17 @@ import eggYellowMobile from "../images/mobile/image-transform.jpg";
 import cupPinkMobile from "../images/mobile/image-stand-out.jpg";
 import eggYellowDesktop from "../images/desktop/image-transform.jpg";
 import cupPinkDesktop from "../images/desktop/image-stand-out.jpg";
-
-/* styles */
-import { SectionStyle } from "../styles/seccion_two_style";
-import GridInfoComponent from "./GridInfoComponent";
+/* text */
 import {
   ST_DESCRIPTION_ONE,
   ST_DESCRIPTION_TWO,
   ST_TITLE_ONE,
   ST_TITLE_TWO,
 } from "../constant/constant";
+
+/* styles */
+import { SectionStyle } from "../styles/seccion_two_style";
+import GridInfoComponent from "./GridInfoComponent";
 
 export default function SectionTwo() {
   const [windowWidth, setWindowWidth] = useState(0);
