@@ -7,6 +7,8 @@ import {
   FotterUlLi,
   UlLiA,
 } from "../styles/fotter_style";
+import logo from "../images/logo-green.svg";
+
 import Facebook from "./icons/Facebook";
 import Instagram from "./icons/Instagram";
 import Pinterest from "./icons/Pinterest";
@@ -16,8 +18,8 @@ export default function Fotter() {
   return (
     <FooterStyle>
       <DivGrid>
-        <FotterLogo />
-        <FotterUl>
+        <FotterLogo src={logo} />
+        <FotterUl className="3rem">
           <FotterUlLi>
             <UlLiA>About</UlLiA>
           </FotterUlLi>
@@ -28,7 +30,7 @@ export default function Fotter() {
             <UlLiA>Projects</UlLiA>
           </FotterUlLi>
         </FotterUl>
-        <FotterUl>
+        <FotterUl className="2rem">
           <FotterUlLi>
             <UlLiA>
               <Facebook />
