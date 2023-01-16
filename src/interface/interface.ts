@@ -27,3 +27,7 @@ export interface PropsImages {
 export interface PropsMenu {
   switchMenu: boolean;
 }
+export interface StylesMenuInterface {
+  height?: string;
+  transitionTimingFunction?: string;
+}

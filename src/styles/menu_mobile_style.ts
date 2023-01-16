@@ -11,6 +11,7 @@ export const MenuMobileStyle = styled.div`
   z-index: 500;
   top: 7rem;
   left: 0;
+  transition: 0.5s;
 `;
 export const MobileStyleBox = styled.div``;
 export const BoxUl = styled.ul`

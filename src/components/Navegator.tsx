@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 /* images */
 import logo from "../images/logo.svg";
@@ -25,12 +25,13 @@ export default function Navegator() {
   const [switchMenu, setSwitchMenu] = useState(false);
 
   const handleClick = () => {
-    if (switchMenu) {
-      setSwitchMenu(false);
-    } else {
-      setSwitchMenu(true);
-    }
+    switchMenu ? setSwitchMenu(false) : setSwitchMenu(true);
   };
+  useEffect(() => {
+    if (windowWidth > 720) {
+      setSwitchMenu(false);
+    }
+  }, [windowWidth]);
 
   return (
     <Header>
@@ -64,7 +65,7 @@ export default function Navegator() {
           </DivHam>
         </DivContent>
       </Nav>
-      {!renderImages && switchMenu && <MenuMobile switchMenu={switchMenu} />}
+      <MenuMobile switchMenu={switchMenu} />
     </Header>
   );
 }

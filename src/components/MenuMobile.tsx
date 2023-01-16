@@ -1,18 +1,33 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
-import { PropsMenu } from "../interface/interface";
+import { PropsMenu, StylesMenuInterface } from "../interface/interface";
 import {
   BoxLi,
   BoxUl,
   MenuMobileStyle,
-  MobileStyleBox,
   BoxA,
 } from "../styles/menu_mobile_style";
 
 function MenuMobile({ switchMenu }: PropsMenu) {
   const elementHTML = document.getElementById("menu")!;
+  const [stylesMenu, setStylesMenu] = useState<StylesMenuInterface>({});
+
+  useEffect(() => {
+    let stylesVariable: StylesMenuInterface = {
+      height: "100%",
+      transitionTimingFunction: "cubic-bezier(0, 0.04, 0.83, -0.19)",
+    };
+    if (switchMenu) {
+      setStylesMenu(stylesVariable);
+    } else {
+      stylesVariable.height = "0%";
+      stylesVariable.transitionTimingFunction = "cubic-bezier(0,.04,0,1)";
+      setStylesMenu(stylesVariable);
+    }
+  }, [switchMenu]);
+
   return ReactDOM.createPortal(
-    <MenuMobileStyle>
+    <MenuMobileStyle style={stylesMenu}>
       <BoxUl>
         <BoxLi>
           <BoxA href="#">About</BoxA>
