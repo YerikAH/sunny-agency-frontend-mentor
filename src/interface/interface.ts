@@ -8,3 +8,15 @@ export interface Props {
   title: string;
   description: string;
 }
+export interface PropsBg {
+  imageDesktop: string;
+  imageMobile: string;
+  title: string;
+  description: string;
+}
+export interface PropsCard {
+  name: string;
+  testimonial: string;
+  job: string;
+  image: string;
+}

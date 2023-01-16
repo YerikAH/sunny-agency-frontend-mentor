@@ -14,3 +14,19 @@ export const SR_TEXT_ONE =
 export const SR_TITLE_TWO = "Photography";
 export const SR_TEXT_TWO =
   "Increase your credibility by getting the most stunning, high-quality photos that improve your business image. ";
+// Text section four
+
+export const NAME_ONE = "Emily R.";
+export const NAME_TWO = "Thomas S.";
+export const NAME_THREE = "Jennie F.";
+
+export const TESTIMONIAL_ONE =
+  "We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.";
+export const TESTIMONIAL_TWO =
+  "Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.";
+export const TESTIMONIAL_THREE =
+  "Officer Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!";
+
+export const JOB_ONE = "Marketing Director";
+export const JOB_TWO = "Chief Operating Officer";
+export const JOB_THREE = "Business Owner";

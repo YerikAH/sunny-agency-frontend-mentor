@@ -14,7 +14,7 @@ function useWidth() {
   }, []);
 
   useEffect(() => {
-    windowWidth > 720 ? setRenderImages(true) : setRenderImages(false);
+    windowWidth > 1000 ? setRenderImages(true) : setRenderImages(false);
   }, [windowWidth]);
 
   return { windowWidth, renderImages };

@@ -55,7 +55,7 @@ export const InfoTitle = styled.h2`
   }
 `;
 export const InfoText = styled.p`
-  font: normal normal 500 1rem/1.8rem var(--font-barlow);
+  font: normal normal 600 1rem/1.8rem var(--font-barlow);
   color: var(--dark-grayish-blue);
   text-align: center;
   margin: 1.5rem 0;

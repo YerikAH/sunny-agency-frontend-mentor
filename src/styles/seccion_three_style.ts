@@ -30,9 +30,27 @@ export const BackgroundImage = styled.img`
 export const BackgroundText = styled.div`
   position: absolute;
   bottom: 0;
-  padding: 4rem;
+  padding: 3rem 1rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 `;
 export const TextTitle = styled.h3`
   font: normal normal 900 1.75rem/1.5rem var(--font-fraunces);
+  color: var(--dark-desaturated-cyan);
+  text-align: center;
 `;
-export const TextDescription = styled.p``;
+export const TextDescription = styled.p`
+  text-align: center;
+  font: normal normal 600 1rem/2rem var(--font-barlow);
+  margin-top: 2rem;
+  color: var(--dark-desaturated-cyan);
+  @media (min-width: 1200px) {
+    max-width: 85%;
+  }
+  @media (min-width: 1200px) {
+    max-width: 390px;
+  }
+`;

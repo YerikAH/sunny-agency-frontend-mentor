@@ -13,38 +13,26 @@ import {
   SR_TITLE_TWO,
 } from "../constant/constant";
 /* styles */
-import {
-  BackgroundImage,
-  BackgroundText,
-  DivGrid,
-  GridBackground,
-  SectionStyle,
-  TextDescription,
-  TextTitle,
-} from "../styles/seccion_three_style";
-import useWidth from "../hook/useWidth";
+import { DivGrid, SectionStyle } from "../styles/seccion_three_style";
+/* component */
+import GridBackgroundComponent from "./GridBackgroundComponent";
 
 export default function SectionThree() {
-  const { windowWidth, renderImages } = useWidth();
   return (
     <SectionStyle>
       <DivGrid>
-        <GridBackground>
-          <BackgroundImage
-            src={renderImages ? tangerineDesktop : tangerineMobile}
-          />
-          <BackgroundText>
-            <TextTitle>{SR_TITLE_ONE}</TextTitle>
-            <TextDescription>{SR_TEXT_ONE}</TextDescription>
-          </BackgroundText>
-        </GridBackground>
-        <GridBackground>
-          <BackgroundImage src={renderImages ? cherryDesktop : cherryMobile} />
-          <BackgroundText>
-            <TextTitle>{SR_TITLE_TWO}</TextTitle>
-            <TextDescription>{SR_TEXT_TWO}</TextDescription>
-          </BackgroundText>
-        </GridBackground>
+        <GridBackgroundComponent
+          imageDesktop={cherryDesktop}
+          imageMobile={cherryMobile}
+          title={SR_TITLE_ONE}
+          description={SR_TEXT_ONE}
+        />
+        <GridBackgroundComponent
+          imageDesktop={tangerineDesktop}
+          imageMobile={tangerineMobile}
+          title={SR_TITLE_TWO}
+          description={SR_TEXT_TWO}
+        />
       </DivGrid>
     </SectionStyle>
   );
