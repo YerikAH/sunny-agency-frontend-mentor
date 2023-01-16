@@ -7,7 +7,7 @@ import { ImageLargeBox, ImageLargeImg } from "../styles/seccion_five_style";
 import { PropsImages } from "../interface/interface";
 
 export default function ImageLarge({ imageMobile, imageDesktop }: PropsImages) {
-  const { windowWidth, renderImages } = useWidth();
+  const { windowWidth, renderImages } = useWidth(1000);
   return (
     <ImageLargeBox>
       <ImageLargeImg src={renderImages ? imageDesktop : imageMobile} />

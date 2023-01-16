@@ -24,3 +24,6 @@ export interface PropsImages {
   imageDesktop: string;
   imageMobile: string;
 }
+export interface PropsMenu {
+  switchMenu: boolean;
+}

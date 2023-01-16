@@ -29,6 +29,9 @@ export const DivGrid = styled.div`
     justify-content: space-between;
   }
   @media (min-width: 1200px) {
+    gap: 4rem;
+  }
+  @media (min-width: 1440px) {
     gap: 5rem;
   }
 `;

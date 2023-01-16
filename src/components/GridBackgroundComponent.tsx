@@ -18,7 +18,7 @@ export default function GridBackgroundComponent({
   title,
   description,
 }: PropsBg) {
-  const { windowWidth, renderImages } = useWidth();
+  const { windowWidth, renderImages } = useWidth(1000);
   return (
     <GridBackground>
       <BackgroundImage src={renderImages ? imageDesktop : imageMobile} />

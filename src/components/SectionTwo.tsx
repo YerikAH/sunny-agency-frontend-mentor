@@ -21,7 +21,7 @@ import GridInfoComponent from "./GridInfoComponent";
 import useWidth from "../hook/useWidth";
 
 export default function SectionTwo() {
-  const { windowWidth, renderImages } = useWidth();
+  const { windowWidth, renderImages } = useWidth(1000);
 
   return (
     <SectionStyle>

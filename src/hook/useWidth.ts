@@ -1,6 +1,6 @@
 import { useState, useEffect, useLayoutEffect } from "react";
 
-function useWidth() {
+function useWidth(maxWidth: number) {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [renderImages, setRenderImages] = useState(false);
 
@@ -14,7 +14,7 @@ function useWidth() {
   }, []);
 
   useEffect(() => {
-    windowWidth > 1000 ? setRenderImages(true) : setRenderImages(false);
+    windowWidth > maxWidth ? setRenderImages(true) : setRenderImages(false);
   }, [windowWidth]);
 
   return { windowWidth, renderImages };
