@@ -36,21 +36,26 @@ export const BackgroundText = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  @media (min-width: 1200px) {
+    padding: 3rem 0;
+  }
 `;
 export const TextTitle = styled.h3`
   font: normal normal 900 1.75rem/1.5rem var(--font-fraunces);
-  color: var(--dark-desaturated-cyan);
   text-align: center;
+  color: var(--very-dark-desaturated-blue);
+  opacity: 0.8;
 `;
 export const TextDescription = styled.p`
   text-align: center;
   font: normal normal 600 1rem/2rem var(--font-barlow);
   margin-top: 2rem;
-  color: var(--dark-desaturated-cyan);
-  @media (min-width: 1200px) {
-    max-width: 85%;
+  color: var(--very-dark-desaturated-blue);
+  opacity: 0.8;
+  @media (min-width: 1000px) {
+    max-width: 75%;
   }
   @media (min-width: 1200px) {
-    max-width: 390px;
+    max-width: 50%;
   }
 `;

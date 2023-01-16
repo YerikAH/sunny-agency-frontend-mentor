@@ -12,7 +12,7 @@ import coneDesktop from "../images/desktop/image-gallery-cone.jpg";
 import coneMobile from "../images/mobile/image-gallery-cone.jpg";
 
 import sugarDesktop from "../images/desktop/image-gallery-sugarcubes.jpg";
-import sugarMobile from "../images/mobile/image-gallery-sugarcubes.jpg";
+import sugarMobile from "../images/mobile/image-gallery-sugar-cubes.jpg";
 
 import ImageLarge from "./ImageLarge";
 export default function SectionFive() {

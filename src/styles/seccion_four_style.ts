@@ -13,12 +13,10 @@ export const TitleSection = styled.h2`
   text-transform: uppercase;
   color: var(--grayish-blue);
   text-align: center;
-  @media (min-width: 720px) {
-    font-size: 1.5rem;
-  }
+  letter-spacing: 4px;
 `;
 export const DivGrid = styled.div`
-  margin-top: 5rem;
+  margin-top: 2.8rem;
   display: grid;
   max-width: 1440px;
   width: 100%;
@@ -57,7 +55,7 @@ export const CardText = styled.p`
   max-width: 400px;
   @media (min-width: 1000px) {
     max-width: none;
-    padding: 0;
+    padding: 0 2.8rem;
   }
 `;
 

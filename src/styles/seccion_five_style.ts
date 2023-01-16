@@ -18,7 +18,10 @@ export const DivGrid = styled.div`
     grid-template-columns: repeat(4, 25%);
   }
 `;
-export const ImageLargeBox = styled.div``;
+export const ImageLargeBox = styled.div`
+  height: 100%;
+  max-height: 27.938rem;
+`;
 export const ImageLargeImg = styled.img`
   width: 100%;
   height: 100%;
