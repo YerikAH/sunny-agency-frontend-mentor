@@ -20,6 +20,8 @@ import {
 import MenuMobile from "./MenuMobile";
 import useWidth from "../hook/useWidth";
 
+import { RemoveScroll } from "react-remove-scroll";
+
 export default function Navegator() {
   const { windowWidth, renderImages } = useWidth(720);
   const [switchMenu, setSwitchMenu] = useState(false);
@@ -65,7 +67,14 @@ export default function Navegator() {
           </DivHam>
         </DivContent>
       </Nav>
+
       <MenuMobile switchMenu={switchMenu} />
+
+      {switchMenu && (
+        <RemoveScroll className="scroll">
+          <div></div>
+        </RemoveScroll>
+      )}
     </Header>
   );
 }
