@@ -1,6 +1,7 @@
 import React from "react";
 /* components */
 import { MainStyle } from "../styles/main_style";
+import SectionFive from "./SectionFive";
 import SectionFour from "./SectionFour";
 import SectionOne from "./SectionOne";
 import SectionThree from "./SectionThree";
@@ -13,6 +14,7 @@ export default function Main() {
       <SectionTwo />
       <SectionThree />
       <SectionFour />
+      <SectionFive />
     </MainStyle>
   );
 }

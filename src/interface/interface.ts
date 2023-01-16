@@ -20,3 +20,7 @@ export interface PropsCard {
   job: string;
   image: string;
 }
+export interface PropsImages {
+  imageDesktop: string;
+  imageMobile: string;
+}
