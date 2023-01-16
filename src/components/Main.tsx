@@ -1,4 +1,5 @@
 import React from "react";
+/* components */
 import { MainStyle } from "../styles/main_style";
 import SectionFour from "./SectionFour";
 import SectionOne from "./SectionOne";

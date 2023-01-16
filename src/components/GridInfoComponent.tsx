@@ -1,5 +1,7 @@
 import React from "react";
+/* props */
 import { Props } from "../interface/interface";
+/* style */
 import {
   DivGrid,
   GridImage,

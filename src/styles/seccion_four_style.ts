@@ -5,20 +5,33 @@ export const SectionStyle = styled.section`
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin: 10rem 0;
   flex-direction: column;
 `;
 export const TitleSection = styled.h2`
-  font: normal normal 900 2rem/2rem var(--font-fraunces);
+  font: normal normal 900 1.125rem/2rem var(--font-fraunces);
   text-transform: uppercase;
+  color: var(--grayish-blue);
+  text-align: center;
+  @media (min-width: 720px) {
+    font-size: 1.5rem;
+  }
 `;
 export const DivGrid = styled.div`
-  margin-top: 2.5rem;
+  margin-top: 5rem;
   display: grid;
   max-width: 1440px;
   width: 100%;
-  justify-content: space-between;
-  @media (min-width: 720px) {
+  gap: 5rem;
+  padding: 0 1rem;
+  justify-content: center;
+  @media (min-width: 1000px) {
     grid-template-columns: auto auto auto;
+    gap: 3rem;
+    justify-content: space-between;
+  }
+  @media (min-width: 1200px) {
+    gap: 5rem;
   }
 `;
 
@@ -27,17 +40,25 @@ export const CardDiv = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 2rem;
+  gap: 4rem;
 `;
 export const CardPhoto = styled.img`
-  width: 6.25rem;
-  height: 6.25rem;
+  width: 4.5rem;
+  height: 4.5rem;
   object-fit: cover;
   border-radius: 115rem;
 `;
 export const CardText = styled.p`
   text-align: center;
   color: var(--very-dark-desaturated-blue);
+  font-weight: 600;
+  padding: 0 2rem;
+  line-height: 2rem;
+  max-width: 400px;
+  @media (min-width: 1000px) {
+    max-width: none;
+    padding: 0;
+  }
 `;
 
 export const CardInfo = styled.div``;
@@ -49,5 +70,6 @@ export const CardJob = styled.span`
   font-size: 0.8rem;
   color: var(--grayish-blue);
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  font-weight: 600;
 `;
