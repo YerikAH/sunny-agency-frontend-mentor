@@ -26,33 +26,33 @@ export default function Fotter() {
         <FotterLogo src={logo} />
         <FotterUl className="3rem">
           <FotterUlLi>
-            <UlLiA>About</UlLiA>
+            <UlLiA href="#">About</UlLiA>
           </FotterUlLi>
           <FotterUlLi>
-            <UlLiA>Services</UlLiA>
+            <UlLiA href="#">Services</UlLiA>
           </FotterUlLi>
           <FotterUlLi>
-            <UlLiA>Projects</UlLiA>
+            <UlLiA href="#">Projects</UlLiA>
           </FotterUlLi>
         </FotterUl>
         <FotterUl className="2rem">
           <FotterUlLi>
-            <UlLiA>
+            <UlLiA href="#">
               <Facebook />
             </UlLiA>
           </FotterUlLi>
           <FotterUlLi>
-            <UlLiA>
+            <UlLiA href="#">
               <Twitter />
             </UlLiA>
           </FotterUlLi>
           <FotterUlLi>
-            <UlLiA>
+            <UlLiA href="#">
               <Instagram />
             </UlLiA>
           </FotterUlLi>
           <FotterUlLi>
-            <UlLiA>
+            <UlLiA href="#">
               <Pinterest />
             </UlLiA>
           </FotterUlLi>
