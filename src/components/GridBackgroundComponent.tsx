@@ -1,4 +1,5 @@
 import React from "react";
+
 /* styles */
 import {
   BackgroundImage,
@@ -7,8 +8,10 @@ import {
   TextDescription,
   TextTitle,
 } from "../styles/seccion_three_style";
+
 /* props */
 import { PropsBg } from "../interface/interface";
+
 /* hook */
 import useWidth from "../hook/useWidth";
 
