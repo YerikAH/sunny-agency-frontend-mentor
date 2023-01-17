@@ -19,6 +19,8 @@ If you want to see the solution, [click here](https://www.npmjs.com/package/reac
 <br/>
 If you want to see the solution in Frontend Mentor, [click here](https://www.npmjs.com/package/react-remove-scroll).
 ### Screenshots
+<img src="./solution/solution.png" alt="solution image" />
+
 ## Author
 
 - Harvey Yerik
