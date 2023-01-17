@@ -15,11 +15,11 @@ This is a solution to the Sunny agency landing page. The challenge is from [Fron
 1. [react-remove-scroll](https://www.npmjs.com/package/react-remove-scroll)
 1. [Vite](https://vitejs.dev/)
 ## Demo 
-If you want to see the solution, [click here](https://www.npmjs.com/package/react-remove-scroll).
+🖥 If you want to see the solution, [click here](https://www.npmjs.com/package/react-remove-scroll).
 <br/>
-If you want to see the solution in Frontend Mentor, [click here](https://www.npmjs.com/package/react-remove-scroll).
+🌎 If you want to see the solution in Frontend Mentor, [click here](https://www.npmjs.com/package/react-remove-scroll).
 ### Screenshots
-<img src="./solution/solution.png" alt="solution image" />
+<img src="./src/images/solution/solution.png" alt="solution image" />
 
 ## Author
 
