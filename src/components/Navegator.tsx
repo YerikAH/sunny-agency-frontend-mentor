@@ -68,6 +68,7 @@ export default function Navegator() {
         </DivContent>
       </Nav>
 
+      {/* Hey!! Here is the menu */}
       <MenuMobile switchMenu={switchMenu} />
 
       {switchMenu && (

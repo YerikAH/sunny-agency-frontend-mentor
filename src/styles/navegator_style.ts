@@ -43,6 +43,30 @@ export const LiA = styled.a`
   font-family: ${(props) =>
     props.className === "special" && "var(--font-fraunces)"};
   text-transform: ${(props) => props.className === "special" && "uppercase"};
+  transition: 0.3s;
+  position: relative;
+  &:hover {
+    color: ${(props) =>
+      props.className === "special" ? "var(--white)" : "var(--white)"};
+    background-color: ${(props) =>
+      props.className === "special" && "var(--sky-pale)"};
+  }
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    transform: scaleX(0);
+    background-color: var(--white);
+    transition: 0.3s;
+  }
+
+  &:hover::after {
+    transform: ${(props) => props.className !== "special" && "scale(1)"};
+  }
 `;
 
 export const LiALogo = styled.a``;

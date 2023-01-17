@@ -4,12 +4,12 @@ export const MenuMobileStyle = styled.div`
   position: absolute;
   width: 100%;
   overflow: auto;
-  height: 100%;
+  height: 0%;
   display: flex;
   justify-content: center;
   align-items: start;
   z-index: 500;
-  top: 7rem;
+  top: 5rem;
   left: 0;
   transition: 0.5s;
 `;
@@ -19,9 +19,10 @@ export const BoxUl = styled.ul`
   justify-content: center;
   align-items: center;
   background-color: var(--white);
-  width: 90%;
   flex-direction: column;
   padding: 2rem 1rem;
+  width: 100%;
+  position: relative;
 `;
 export const BoxLi = styled.li``;
 export const BoxA = styled.a`
@@ -38,4 +39,30 @@ export const BoxA = styled.a`
     props.className === "special" && "var(--font-fraunces)"};
   text-transform: ${(props) => props.className === "special" && "uppercase"};
   margin: ${(props) => props.className === "special" && "1rem 2rem"};
+  transition: 0.3s;
+
+  &:hover {
+    color: ${(props) =>
+      props.className === "special"
+        ? "var(--very-dark-desaturated-blue)"
+        : "var(--very-dark-desaturated-blue)"};
+    background-color: ${(props) =>
+      props.className === "special" && "var(--yellow-pale)"};
+  }
+`;
+export const DecorationBox = styled.div`
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  top: 4px;
+`;
+export const DecorationTrian = styled.div`
+  width: 35px;
+  height: 35px;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  background-color: var(--white);
+`;
+export const BoxUlFather = styled.div`
+  width: 90%;
 `;

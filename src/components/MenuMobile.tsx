@@ -7,6 +7,9 @@ import {
   BoxUl,
   MenuMobileStyle,
   BoxA,
+  DecorationTrian,
+  BoxUlFather,
+  DecorationBox,
 } from "../styles/menu_mobile_style";
 
 function MenuMobile({ switchMenu }: PropsMenu) {
@@ -29,22 +32,27 @@ function MenuMobile({ switchMenu }: PropsMenu) {
 
   return ReactDOM.createPortal(
     <MenuMobileStyle style={stylesMenu}>
-      <BoxUl>
-        <BoxLi>
-          <BoxA href="#">About</BoxA>
-        </BoxLi>
-        <BoxLi>
-          <BoxA href="#">Services</BoxA>
-        </BoxLi>
-        <BoxLi>
-          <BoxA href="#">Projects</BoxA>
-        </BoxLi>
-        <BoxLi>
-          <BoxA className="special" href="#">
-            Contact
-          </BoxA>
-        </BoxLi>
-      </BoxUl>
+      <BoxUlFather>
+        <DecorationBox>
+          <DecorationTrian />
+        </DecorationBox>
+        <BoxUl>
+          <BoxLi>
+            <BoxA href="#">About</BoxA>
+          </BoxLi>
+          <BoxLi>
+            <BoxA href="#">Services</BoxA>
+          </BoxLi>
+          <BoxLi>
+            <BoxA href="#">Projects</BoxA>
+          </BoxLi>
+          <BoxLi>
+            <BoxA className="special" href="#">
+              Contact
+            </BoxA>
+          </BoxLi>
+        </BoxUl>
+      </BoxUlFather>
     </MenuMobileStyle>,
     elementHTML
   );

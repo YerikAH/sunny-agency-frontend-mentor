@@ -5,6 +5,7 @@
 :root {
   --soft-red: hsl(7, 99%, 70%);
   --yellow: hsl(51, 100%, 49%);
+  --yellow-pale: hsl(50, 100%, 66%);
   --dark-desaturated-cyan: hsl(167, 40%, 24%); /* graphic design text */
   --dark-blue: hsl(198, 62%, 26%); /* photography text */
   --dark-moderate-cyan: hsl(168, 34%, 41%); /* footer */
@@ -13,9 +14,11 @@
   --dark-grayish-blue: hsl(232, 10%, 55%);
   --grayish-blue: hsl(210, 4%, 67%);
   --white: hsl(0, 0%, 100%);
+  --bg-color: #fffbf8;
   --font-fraunces: "Fraunces", serif;
   --font-barlow: "Barlow", sans-serif;
   --header-image-color: #3dbeff;
+  --sky-pale: #6fcdff;
   --footer-color: #90d4c6;
 }
 /*
@@ -33,6 +36,9 @@ phone = 375px
   padding: 0;
   box-sizing: border-box;
   font-family: var(--font-barlow);
+}
+html {
+  background-color: var(--bg-color);
 }
 a,
 li {

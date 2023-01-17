@@ -51,7 +51,7 @@ export const CardPhoto = styled.img`
 `;
 export const CardText = styled.p`
   text-align: center;
-  color: var(--very-dark-desaturated-blue);
+  color: var(--very-dark-grayish-blue);
   font-weight: 600;
   padding: 0 2rem;
   line-height: 2rem;

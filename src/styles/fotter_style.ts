@@ -18,19 +18,27 @@ export const DivGrid = styled.div`
   gap: 3rem;
   place-content: center;
 `;
+
 export const FotterLogo = styled.img`
   width: 10.625rem;
   height: auto;
 `;
+
 export const FotterUl = styled.ul`
   display: flex;
   justify-content: center;
   align-items: center;
   gap: ${(props) => props.className && props.className};
+  margin-top: ${(props) => props.className === "2rem" && "2rem"};
 `;
+
 export const FotterUlLi = styled.li``;
 export const UlLiA = styled.a`
   letter-spacing: 0.5px;
   color: var(--dark-moderate-cyan);
   font-weight: 600;
+  transition: 0.3s;
+  &:hover {
+    color: var(--white);
+  }
 `;
