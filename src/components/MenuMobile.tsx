@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
-
 import ReactDOM from "react-dom";
-import { PropsMenu, StylesMenuInterface } from "../interface/interface";
+/* styles */
 import {
   BoxLi,
   BoxUl,
@@ -11,6 +10,9 @@ import {
   BoxUlFather,
   DecorationBox,
 } from "../styles/menu_mobile_style";
+
+/* props */
+import { PropsMenu, StylesMenuInterface } from "../interface/interface";
 
 function MenuMobile({ switchMenu }: PropsMenu) {
   const elementHTML = document.getElementById("menu")!;

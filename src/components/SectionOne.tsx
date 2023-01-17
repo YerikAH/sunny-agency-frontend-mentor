@@ -1,8 +1,8 @@
 import React from "react";
-/* text */
-import { SO_TITLE } from "../constant/constant";
+
 /* images */
 import arrowDown from "../images/icon-arrow-down.svg";
+
 /* styles */
 import {
   BackgroundImage,
@@ -12,6 +12,9 @@ import {
   SectionStyle,
   BackgroundColor,
 } from "../styles/seccion_style";
+
+/* text */
+import { SO_TITLE } from "../constant/constant";
 
 export default function SectionOne() {
   return (

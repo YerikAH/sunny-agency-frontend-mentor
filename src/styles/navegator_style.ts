@@ -65,7 +65,7 @@ export const LiA = styled.a`
   }
 
   &:hover::after {
-    transform: ${(props) => props.className !== "special" && "scale(1)"};
+    transform: ${(props) => !props.className && "scale(1)"};
   }
 `;
 

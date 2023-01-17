@@ -61,7 +61,7 @@ export default function Navegator() {
             </UlLi>
           </NavUl>
           <DivHam>
-            <LiA>
+            <LiA className="ham">
               <NavImage src={ham} onClick={handleClick} />
             </LiA>
           </DivHam>

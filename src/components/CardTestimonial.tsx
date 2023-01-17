@@ -1,5 +1,6 @@
 import React from "react";
-import { PropsCard } from "../interface/interface";
+
+/* style */
 import {
   CardDiv,
   CardInfo,
@@ -8,6 +9,9 @@ import {
   CardPhoto,
   CardText,
 } from "../styles/seccion_four_style";
+
+/* props */
+import { PropsCard } from "../interface/interface";
 
 export default function CardTestimonial({
   image,

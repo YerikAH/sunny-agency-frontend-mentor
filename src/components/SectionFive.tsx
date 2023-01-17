@@ -1,5 +1,7 @@
 import React from "react";
-import { DivGrid, SectionStyle } from "../styles/seccion_five_style";
+
+/* components */
+import ImageLarge from "./ImageLarge";
 
 /* images */
 import milkDesktop from "../images/desktop/image-gallery-milkbottles.jpg";
@@ -14,7 +16,9 @@ import coneMobile from "../images/mobile/image-gallery-cone.jpg";
 import sugarDesktop from "../images/desktop/image-gallery-sugarcubes.jpg";
 import sugarMobile from "../images/mobile/image-gallery-sugar-cubes.jpg";
 
-import ImageLarge from "./ImageLarge";
+/* styles */
+import { DivGrid, SectionStyle } from "../styles/seccion_five_style";
+
 export default function SectionFive() {
   return (
     <SectionStyle>

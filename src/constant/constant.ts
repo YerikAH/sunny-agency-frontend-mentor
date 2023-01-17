@@ -1,5 +1,6 @@
 // Text section one
 export const SO_TITLE = "We are creatives";
+
 // Text section two
 export const ST_TITLE_ONE = "Transform your brand";
 export const ST_DESCRIPTION_ONE =
@@ -7,6 +8,7 @@ export const ST_DESCRIPTION_ONE =
 export const ST_TITLE_TWO = "Stand out to the right audience";
 export const ST_DESCRIPTION_TWO =
   "Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.";
+
 // Text section three
 export const SR_TITLE_ONE = "Graphic design";
 export const SR_TEXT_ONE =
@@ -14,8 +16,8 @@ export const SR_TEXT_ONE =
 export const SR_TITLE_TWO = "Photography";
 export const SR_TEXT_TWO =
   "Increase your credibility by getting the most stunning, high-quality photos that improve your business image. ";
-// Text section four
 
+// Text section four
 export const NAME_ONE = "Emily R.";
 export const NAME_TWO = "Thomas S.";
 export const NAME_THREE = "Jennie F.";

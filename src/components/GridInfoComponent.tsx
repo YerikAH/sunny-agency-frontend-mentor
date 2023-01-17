@@ -1,6 +1,5 @@
 import React from "react";
-/* props */
-import { Props } from "../interface/interface";
+
 /* style */
 import {
   DivGrid,
@@ -10,6 +9,9 @@ import {
   InfoText,
   InfoTitle,
 } from "../styles/seccion_two_style";
+
+/* props */
+import { Props } from "../interface/interface";
 
 export default function GridInfoComponent({
   classOne,

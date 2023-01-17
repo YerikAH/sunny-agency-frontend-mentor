@@ -1,5 +1,12 @@
 import React from "react";
 
+/* images */
+
+import emily from "../images/image-emily.jpg";
+import jennie from "../images/image-jennie.jpg";
+import thomas from "../images/image-thomas.jpg";
+import CardTestimonial from "./CardTestimonial";
+
 /* styles */
 import {
   DivGrid,
@@ -7,12 +14,7 @@ import {
   TitleSection,
 } from "../styles/seccion_four_style";
 
-/* images */
-
-import emily from "../images/image-emily.jpg";
-import jennie from "../images/image-jennie.jpg";
-import thomas from "../images/image-thomas.jpg";
-import CardTestimonial from "./CardTestimonial";
+/* text */
 import {
   JOB_ONE,
   JOB_THREE,

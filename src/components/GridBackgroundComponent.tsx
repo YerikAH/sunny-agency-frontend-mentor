@@ -7,10 +7,10 @@ import {
   TextDescription,
   TextTitle,
 } from "../styles/seccion_three_style";
-/* hook */
-import useWidth from "../hook/useWidth";
 /* props */
 import { PropsBg } from "../interface/interface";
+/* hook */
+import useWidth from "../hook/useWidth";
 
 export default function GridBackgroundComponent({
   imageDesktop,

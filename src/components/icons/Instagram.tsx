@@ -1,4 +1,5 @@
 import React from "react";
+/* style */
 import { SvgComponent } from "../../styles/dir_icon_style";
 
 export default function Instagram() {

@@ -1,4 +1,15 @@
 import React from "react";
+
+/* components */
+import Facebook from "./icons/Facebook";
+import Instagram from "./icons/Instagram";
+import Pinterest from "./icons/Pinterest";
+import Twitter from "./icons/Twitter";
+
+/* images */
+import logo from "../images/logo-green.svg";
+
+/* style */
 import {
   DivGrid,
   FooterStyle,
@@ -7,12 +18,6 @@ import {
   FotterUlLi,
   UlLiA,
 } from "../styles/fotter_style";
-import logo from "../images/logo-green.svg";
-
-import Facebook from "./icons/Facebook";
-import Instagram from "./icons/Instagram";
-import Pinterest from "./icons/Pinterest";
-import Twitter from "./icons/Twitter";
 
 export default function Fotter() {
   return (
